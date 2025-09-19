@@ -1,0 +1,150 @@
+body {
+  background: #f8f8f4;
+  font-family: "Georgia", serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem 1rem 2rem;
+  border-bottom: 2px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.name-block {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-star {
+  font-size: 2.3rem;
+  color: #f9564f;
+}
+
+h2 {
+  color: #555;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 4px solid #ececec;
+  margin-top: 1rem;
+}
+
+.about {
+  margin-bottom: 1.3rem;
+}
+
+section {
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  background: #faf9f6;
+  border-bottom: 1px solid #e7e7e2;
+}
+
+.why-hire h3,
+.projects h3,
+.connect h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+  color: #1d1d1b;
+  letter-spacing: -0.5px;
+}
+
+.projects-slider {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+}
+
+.project-card {
+  min-width: 240px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(100, 80, 65, 0.06);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(79, 83, 110, 0.09);
+}
+
+.project-card img {
+  width: 100%;
+  height: 138px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #f9564f;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.connect .icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/* Fade/slide animations for sections on scroll */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-pic img {
+    margin: 0.5rem 0;
+  }
+  h1 {
+    font-size: 2.1rem;
+  }
+  .projects-slider {
+    gap: 1rem;
+  }
+  .project-card {
+    min-width: 170px;
+  }
+}
