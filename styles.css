@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #fff;
   font-family: "Inter Tight", sans-serif;
@@ -11,18 +16,49 @@ body {
 }
 
 .hero {
+  padding: 5rem 0;
+  background-color: #e8e4ed;
+  /* Add this to ensure it covers the full width */
+  width: 100%;
+  margin-top: -30px; /* Adjust this value as needed */
+}
+
+.header-content {
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center; /* centers vertically */
-  flex-direction: column; /* stack name and role vertically */
-  padding: 3.5rem 1rem 2rem 1rem;
-  border-bottom: 2px solid #eee;
-  background: #e8e4ed;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-height: 180px; /* Gives consistent height */
+}
+
+.logo-section,
+.profile-pic {
+  display: flex;
+  align-items: center; /* Centers the images within their containers */
+  height: 180px; /* Match the container height */
+}
+
+.logo-icon {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
 }
 
 .name-block {
-  max-width: 100%;
+  flex: 1;
   text-align: center;
+  margin: 0;
+  color: #e8e4ed;
+  height: 180px; /* Match the container height */ /* Match container height */
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 h1 {
