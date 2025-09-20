@@ -1,5 +1,5 @@
 body {
-  background: #f8f8f4;
+  background: #fff;
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -17,7 +17,7 @@ body {
   flex-direction: column; /* stack name and role vertically */
   padding: 3.5rem 1rem 2rem 1rem;
   border-bottom: 2px solid #eee;
-  background: #fff;
+  background: #e8e4ed;
 }
 
 .name-block {
@@ -30,6 +30,7 @@ h1 {
   font-weight: 500;
   font-style: normal;
   font-size: 6rem;
+  color: #5d4e75;
   letter-spacing: -1px;
   margin: 0 0 0.1rem 0; /* Very small bottom margin */
   justify-content: center;
@@ -41,7 +42,7 @@ h2 {
   font-size: 1.6rem;
   font-style: italic;
   font-weight: 400;
-  color: #555;
+  color: #5d4e75;
   margin: 0 0 0.3rem 0; /* No top margin, slight bottom */
   text-align: center;
 }
@@ -88,7 +89,7 @@ section:not(:last-child)::after {
   font-family: "Radley", serif; /* or your Bogart font once installed */
   font-weight: 400;
   font-style: italic;
-  color: #555;
+  color: #5d4e75;
   font-size: 2rem; /* reduced from 2rem */
   margin-bottom: 0.1rem; /* was 0.8rem, now much smaller */
 }
@@ -97,7 +98,7 @@ section:not(:last-child)::after {
   font-family: "Radley", serif; /* or your Bogart font once installed */
   font-weight: 500;
   font-style: normal;
-  color: black;
+  color: #555;
   font-size: 1.5rem; /* reduced from 2rem */
   margin-bottom: 0.1rem; /* was 0.8rem, now much smaller */
 }
