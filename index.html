@@ -52,11 +52,48 @@
     <section class="projects">
       <h3>Featured Projects</h3>
 
+      <!-- Put ALL 4 project cards inside ONE projects-grid div -->
       <div class="projects-grid">
+        <!-- CINENICHE WIREFRAMES FOR FIGMA -->
         <div class="project-card">
           <div class="phone-mockup">
-            <div class="phone-screen figma-preview">Figma Prototype</div>
+            <div class="phone-screen">
+              <!-- ADDED: Missing phone-screen div -->
+              <img src="photos/figma2.png" alt="Figma Logo" />
+            </div>
           </div>
+          <!-- ADDED: Missing closing div for phone-mockup -->
+
+          <div class="project-info">
+            <!-- MOVED: This should be inside project-card -->
+            <div class="project-type">web Application Design</div>
+            <h4>Movie Streaming Service Project</h4>
+            <p class="project-description">
+              Interactive prototype displaying a streaming service forward
+              facing application (landing page), involving the user in cycling
+              through carousels of movies, creating a user profile and
+              implementing other services like voice recognition, intended to
+              replicate the services of other streaming service platforms.
+            </p>
+            <a
+              href="https://www.figma.com/proto/dCJYsXEnqIlfXdxeqKTXir/Wireframes---CineNiche?node-id=137-1002&t=XMy2aTlTJhoQSUVc-1"
+              target="_blank"
+              class="project-link"
+            >
+              View Wireframes
+            </a>
+          </div>
+        </div>
+        <!-- This closes the project-card -->
+
+        <!-- CODE ADVENTURE VISION BOARD ON FIGMA -->
+        <div class="project-card">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <img src="photos/figma2.png" alt="Figma Logo" />
+            </div>
+          </div>
+          <!-- ADDED: This missing closing div tag -->
           <div class="project-info">
             <div class="project-type">Mobile App Design</div>
             <h4>Code Adventure Vision Board</h4>
@@ -66,7 +103,7 @@
               platform.
             </p>
             <a
-              href="https://www.figma.com/design/Sdpu47aNO0S77Zj8hcFacz/Code-Adventure-UX-UI-VIsion-Board?node-id=0-1&p=f&t=R0PmGHFqRLfyHXlm-0"
+              href="https://www.figma.com/proto/Sdpu47aNO0S77Zj8hcFacz/Code-Adventure-UX-UI-VIsion-Board?node-id=0-1&t=NU9y1wvTQ97e4oVI-1"
               target="_blank"
               class="project-link"
             >
@@ -75,9 +112,13 @@
           </div>
         </div>
 
+        <!-- MINISTERING APP ON FIGMA -->
         <div class="project-card">
+          <!-- For Figma projects -->
           <div class="phone-mockup">
-            <div class="phone-screen figma-preview">Figma Prototype</div>
+            <div class="phone-screen">
+              <img src="photos/figma2.png" alt="Figma Logo" />
+            </div>
           </div>
           <div class="project-info">
             <div class="project-type">Mobile App Design</div>
@@ -89,7 +130,7 @@
               efforts tracked.
             </p>
             <a
-              href="https://www.figma.com/design/WsWE9AwR3A1baCchX6mlF4/Milestone--6?node-id=0-1&p=f&t=CRcqEPc2OvhAmP0H-0"
+              href="https://www.figma.com/design/WsWE9AwR3A1baCchX6mlF4/Milestone--6?node-id=0-1&t=Znx7RyWR5gsMa5hU-1"
               target="_blank"
               class="project-link"
             >
@@ -98,6 +139,7 @@
           </div>
         </div>
 
+        <!-- TURTLE SHELTER PROJECT FULL STACK -->
         <div class="project-card">
           <div class="browser-mockup">
             <div class="browser-header">
@@ -129,6 +171,7 @@
           </div>
         </div>
       </div>
+      <!-- End of projects-grid -->
     </section>
 
     <section class="connect">
