@@ -20,10 +20,22 @@
   <body>
     <header class="hero">
       <div class="header-content">
+        <!-- Profile picture on the left -->
+        <div class="profile-pic">
+          <img
+            src="photos/2024-03_Annabelle-Headshots-555.jpeg"
+            alt="Annabelle Baker"
+            class="profile-image"
+          />
+        </div>
+
+        <!-- Name block in center -->
         <div class="name-block">
           <h1>Annabelle Baker</h1>
           <h2>UX / UI Design Student</h2>
         </div>
+
+        <!-- Optional: You could add another element on the right for balance -->
       </div>
     </header>
 
@@ -31,11 +43,12 @@
       <h3>About Me</h3>
       <p>
         • I'm a first-year Masters student in the Information Systems program at
-        Brigham Young University, minoring in Healthcare Leadership.<br />
-        • I love all things crafty—especially scrapbooking! I'm super creative
-        and love working with my hands.<br />
-        • I speak Italian, adore classical and rock music, and enjoy playing the
-        piano and singing.<br />
+        Brigham Young University, minoring in Healthcare Leadership. My emphasis
+        is in UX/UI Design and Data Analytics.<br />
+        • I love all things crafty—especially scrapbooking! I'm passionate about
+        picking up new hobbies and doing anything creative.<br />
+        • I speak Italian, adore classical and rock music alike, and enjoy
+        playing the piano and singing.<br />
       </p>
     </section>
 
@@ -43,30 +56,35 @@
       <h3>Why Hire Me?</h3>
       <p>
         • Empathetic, user-focused approach<br />
-        • Advanced Figma & prototyping skills<br />
+        • Advanced Figma & prototyping skills, along with front-end development
+        technical skills<br />
         • Collaborative design process<br />
-        • Strong attention to detail and usability
+        • Strong attention to detail, usability and constant improvement
       </p>
     </section>
 
     <section class="projects">
       <h3>Featured Projects</h3>
 
-      <!-- Put ALL 4 project cards inside ONE projects-grid div -->
       <div class="projects-grid">
-        <!-- CINENICHE WIREFRAMES FOR FIGMA -->
+        <!-- MOVIE STREAMING SERVICE PROJECT -->
         <div class="project-card">
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <!-- ADDED: Missing phone-screen div -->
-              <img src="photos/figma2.png" alt="Figma Logo" />
+          <div class="browser-mockup">
+            <div class="browser-header">
+              <div class="browser-dots">
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+              </div>
+            </div>
+            <div class="browser-content">
+              <div class="browser-content website-preview">
+                <img src="photos/figma2.png" alt="Figma Logo" />
+              </div>
             </div>
           </div>
-          <!-- ADDED: Missing closing div for phone-mockup -->
-
           <div class="project-info">
-            <!-- MOVED: This should be inside project-card -->
-            <div class="project-type">web Application Design</div>
+            <div class="project-type">Web Application Design</div>
             <h4>Movie Streaming Service Project</h4>
             <p class="project-description">
               Interactive prototype displaying a streaming service forward
@@ -80,20 +98,20 @@
               target="_blank"
               class="project-link"
             >
-              View Wireframes
+              View Prototype
             </a>
           </div>
         </div>
-        <!-- This closes the project-card -->
 
-        <!-- CODE ADVENTURE VISION BOARD ON FIGMA -->
+        <!-- CODE ADVENTURE VISION BOARD -->
         <div class="project-card">
           <div class="phone-mockup">
             <div class="phone-screen">
-              <img src="photos/figma2.png" alt="Figma Logo" />
+              <div class="phone-screen figma-preview">
+                <img src="photos/figma2.png" alt="Figma Logo" />
+              </div>
             </div>
           </div>
-          <!-- ADDED: This missing closing div tag -->
           <div class="project-info">
             <div class="project-type">Mobile App Design</div>
             <h4>Code Adventure Vision Board</h4>
@@ -112,12 +130,13 @@
           </div>
         </div>
 
-        <!-- MINISTERING APP ON FIGMA -->
+        <!-- MINISTERING APP -->
         <div class="project-card">
-          <!-- For Figma projects -->
           <div class="phone-mockup">
             <div class="phone-screen">
-              <img src="photos/figma2.png" alt="Figma Logo" />
+              <div class="phone-screen figma-preview">
+                <img src="photos/figma2.png" alt="Figma Logo" />
+              </div>
             </div>
           </div>
           <div class="project-info">
@@ -134,12 +153,12 @@
               target="_blank"
               class="project-link"
             >
-              View Wireframes
+              View Prototype
             </a>
           </div>
         </div>
 
-        <!-- TURTLE SHELTER PROJECT FULL STACK -->
+        <!-- TURTLE SHELTER PROJECT -->
         <div class="project-card">
           <div class="browser-mockup">
             <div class="browser-header">
@@ -149,14 +168,18 @@
                 <div class="browser-dot"></div>
               </div>
             </div>
-            <div class="browser-content website-preview">Live Website</div>
+            <div class="browser-content">
+              <div class="browser-content website-preview">
+                <img src="photos/github.png" alt="Github Logo" />
+              </div>
+            </div>
           </div>
           <div class="project-info">
             <div class="project-type">Full-Stack Development</div>
             <h4>Turtle Shelter Project</h4>
             <p class="project-description">
               Complete web application and database built with academic
-              colleagues to organize the data of the Turtle Shelter Project , a
+              colleagues to organize the data of the Turtle Shelter Project, a
               local Utah non-profit organization providing insulated vests for
               the homeless population, featuring responsive design and database
               integration for shelter management.
@@ -171,7 +194,7 @@
           </div>
         </div>
       </div>
-      <!-- End of projects-grid -->
+      <!-- End projects-grid -->
     </section>
 
     <section class="connect">
