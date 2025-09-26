@@ -16,65 +16,79 @@ body {
 }
 
 .hero {
-  padding: 3rem 0;
+  padding: 4rem 0;
   background-color: #e8e4ed;
   width: 100%;
 }
 
-* Update your header-content CSS */ .header-content {
+/* REPLACE your .header-content CSS with this: */
+
+.header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Changed back to space-between for profile pic layout */
+  justify-content: center; /* Changed back to center */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   min-height: 180px;
-  gap: 2rem; /* Add gap between elements */
+  gap: 2rem;
+  position: relative; /* Added for absolute positioning */
 }
 
-/* Profile picture container */
+/* Profile picture - positioned absolutely to the left */
 .profile-pic {
+  position: absolute;
+  left: 2rem;
   display: flex;
   align-items: center;
   height: 180px;
 }
 
-/* Profile image styling */
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #5d4e75; /* Matches your color scheme */
-  box-shadow: 0 8px 20px rgba(93, 78, 117, 0.2);
-}
-
-/* Update name block to not take full width */
+/* Name block - now truly centered */
 .name-block {
-  flex: 1;
   text-align: center;
-  margin: 0;
-  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px; /* Prevent it from getting too wide */
+  margin-left: 80px; /* 👈 pushes the text slightly right */
+  /* Removed flex: 1 and max-width so it centers naturally */
 }
 
-/* Responsive adjustments */
+.name-block h2,
+h5 {
+  text-align: center; /* force it to center itself */
+  margin-left: -50px; /* shift slightly left */
+}
+
+/* Keep existing profile image styling */
+.profile-image {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 2.5px solid #5d4e75; */
+}
+
+/* Updated responsive design */
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
     text-align: center;
+    position: static; /* Remove absolute positioning on mobile */
+  }
+
+  .profile-pic {
+    position: static; /* Remove absolute positioning on mobile */
   }
 
   .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 }
+
 h1 {
   font-family: "Radley", serif;
   font-weight: 500;
@@ -141,6 +155,58 @@ section:not(:last-child)::after {
   color: #444;
   max-width: 700px;
   margin: 0 auto;
+}
+
+/* Technologies Section */
+.technologies {
+  max-width: 1000px;
+  padding: 2.6rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.technologies h3 {
+  font-family: "Radley", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #5d4e75;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  text-align: left;
+}
+
+.tech-category h4 {
+  font-family: "Radley", serif;
+  font-size: 1.4rem;
+  color: #5d4e75;
+  margin-bottom: 1rem;
+}
+
+.tech-category ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+  color: #444;
+  font-size: 1.05rem;
+}
+
+.tech-category li::before {
+  content: "• ";
+  color: #5d4e75;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 .connect p {
